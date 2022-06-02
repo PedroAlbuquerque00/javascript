@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="tocar">Tocar a música</button>
+  <button id="parar">Parar a música</button>
+
+  <audio src="musica/musica.mp3"></audio>
+
+  <script>
+    const button = document.querySelector('#tocar')
+    const parar = document.querySelector('#parar')
+    const audio = document.querySelector('audio')
+
+    button.addEventListener('click', function(){
+      audio.play(); 
+    })
+
+    parar.addEventListener('click', function(){
+      audio.pause();
+    })
+  </script>
+</body>
+</html>
